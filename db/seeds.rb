@@ -5,3 +5,12 @@
 #
 #   movies = Movie.create([{ name: "Star Wars" }, { name: "Lord of the Rings" }])
 #   Character.create(name: "Luke", movie: movies.first)
+
+puts 'Cleaning database...'
+Restaurant.destroy_all
+
+Restaurant.create(name: "La tour d'Argent", address: 'Paris', category: 'french')
+Restaurant.create(name: 'Ichizen', address: 'Nantes', category: 'japanese')
+Restaurant.create(name: 'Francesco', address: 'Nice', category: 'italian')
+Restaurant.create(name: 'Frity', address: 'Paris', category: 'belgian')
+Restaurant.create(name: 'Tse Yang', address: 'Paris', category: 'chinese')

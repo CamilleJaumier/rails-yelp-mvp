@@ -1,0 +1,10 @@
+<p style="color: green"><%= notice %></p>
+
+<h2><strong>Restaurant</strong></h2>
+
+<%= render @restaurant %>
+
+<div>
+  <%= link_to "Back to restaurants", restaurants_path %>
+  <%= link_to "Add a new review", new_restaurant_review_path(@restaurant) %>
+</div>
